@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Movie Seat Booking</title>
+  </head>
+  <body>
+    <div class="wrapper1">
+      <div class="container1">
+        <h1>cinema'te</h1>
+        <div class="snap">
+         <p>look--pick--book</p>    
+        </div>      
+      </div>
+      <!-- Add this div for the wallet display -->
+<div class="wallet-container">
+  <span class="wallet-label">CineWallet:</span>
+  <span id="wallet-tokens">9999</span>
+  <div class="btnwrapper">
+    <button class="payment" onclick="navigateToURL()"><span>Add money to wallet</span></button>
+  <!-- <a href="pay.html" ><span>Add money to wallet </span></a>--> 
+  </div>
+</div>
+
+    <div class="movie-container">
+      <label>Avaliable Theatres:</label>
+      <label value="m1"></label>
+      <select id="movie">
+        <option value="m1"> Asian Cineplanet</option>
+        <option value="m2"> PVR </option>
+        <option value="m3"> Cinepolis </option>
+        <option value="m4"> Escape Cinemas </option>
+      </select>
+      <label for="date">Select Date:</label>
+      <select id="date">
+        <!-- Add your date options here -->
+        <option value="20-02-24" id="date1">20-02-24</option>
+        <option value="21-02-24" id="date2">20-02-24</option>
+        <option value="22-02-24" id="date3">20-02-24</option>
+      </select>
+    
+      <label for="time">Select Time:</label>
+      <select id="time">
+        <!-- Add your time options here -->
+        <option value="11 AM">11 AM</option>
+        <option value="2 PM">2 PM</option>
+        <option value="6 PM">6 PM</option>
+        <option value="9 PM">9 PM</option>
+      </select>
+    </div>
+    <ul class="showcase">
+      <li>
+        <div class="seat"></div>
+        <small>Avaliable</small>
+      </li>
+      <li>
+        <div class="seat selected"></div>
+        <small>Selected</small>
+      </li>
+      <li>
+        <div class="seat occupied"></div>
+        <small>Occupied</small>
+      </li>
+    </ul>
+    <div class="container">
+      
+
+    </div>
+
+    <p class="text">
+      You have selected <span id="count">0</span> seats for
+      <b>"<label id="movieTitle"></label>"</b> of total price Rs.
+      <span id="total">0</span>
+    </p>
+    
+    <!-- Add an element to display selected seat numbers -->
+    <p class="text">Selected Seats: <span id="selectedSeatsInfo"></span></p>
+    
+    <button id="buyButton" class="btn" role="button">Book</button>
+    
+    
+
+    <script src="script.js"></script>
+  </body>
+</html>

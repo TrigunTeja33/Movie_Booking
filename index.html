@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style1.css" />
+    <title>Movie App</title>
+  </head>
+  <body>
+    <header>
+      <div class="wrapper1">
+        <div class="container1">
+          <h1>cinema'te</h1>
+          </div>
+          </div>
+          <div class="group">    
+      <form id="form">
+        <br>
+        <input type="text" id="search" class="input" placeholder="Search">
+      </form>
+      </div>
+      <div class="header-buttons">
+        <nav class="navbar">
+        
+        <div id="user-status"></div>
+      </div> 
+    </nav>           
+    </header>
+    <div class="blur-bg-overlay"></div>
+<div class="form-popup">
+  <span class="close-btn material-symbols-rounded"><b>X</b></span>
+  <div class="form-box login">
+    <div class="form-details">
+    </div>
+    <div class="form-content">
+      <h2>LOGIN</h2>
+      <form action="#" id="login-form" >
+        <div class="input-field">
+          <input type="email" id="login-email" required>
+          <label>Email</label>
+        </div>
+        <div class="input-field">
+          <input type="password" id="login-password" required>
+          <label>Password</label>
+        </div>
+        <a href="#" class="forgot-pass-link" onclick="alert('Sorry, the Forgot Password feature is not available at the moment.')">Forgot password?</a>
+        <button type="submit">Log In</button>
+      </form>
+      <div class="bottom-link">
+        Don't have an account?
+        <a href="#index.html" id="signup-link">Signup</a>
+      </div>
+    </div>
+  </div>
+  <div class="form-box signup">
+    <div class="form-details">
+    </div>
+    <div class="form-content">
+      <h2>SIGNUP</h2>
+      <form action="#" id="signup-form">
+        <div class="input-field">
+          <input type="email" id="signup-email" required>
+          <label>Enter your Email</label>
+        </div>
+        
+        <div class="input-field">
+          <input type="password" id="signup-password" required>
+          <label>Create password</label>
+        </div>
+        <div class="policy-text">
+          <input type="checkbox" id="policy" required>
+          <label for="policy">
+            I agree the
+            <a href="#" class="option" onclick="alert('All content on our platform, unless otherwise stated, is the intellectual property of the service provider. You may not use, reproduce, or distribute any content without permission.')">Terms & Conditions</a>
+          </label>
+        </div>
+        <button type="submit">Sign Up</button>
+      </form>
+      <div class="bottom-link">
+        Already have an account?
+        <a href="#index.html" id="login-link">Login</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <main id="main"></main>
+    <button class="login-btn" id="signupBtn"></button>
+
+    <script src="script1.js"></script>
+  </body>
+</html>
